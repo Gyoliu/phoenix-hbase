@@ -53,7 +53,7 @@ class CRUDController {
 
      */
     @ResponseBody
-    @RequestMapping(value = "/query", method = RequestMethod.GET)
+    @RequestMapping(value = "/query", method = RequestMethod.POST)
     public Object query(){
         return crudService.query();
     }
